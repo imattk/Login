@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    
+}
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+section img{
+    width: 50vw;
+    height: 100%; 
+
+}
+section .imgBx{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    
+}
+section .imgBx:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(225deg, #275af3, #bb1d1d);
+    z-index: 1;
+    opacity: .25;
+
+}
+section .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+section .contentBx{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+section .contentBx .formBx{
+    width: 50%;
+}
+section .contentBx .formBx h2{
+    color: #607d8b;
+    font-weight: 800;
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #a59449;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+section .contentBx .formBx .inputBx{
+    margin-bottom: 20px;
+}
+section .contentBx .formBx .inputBx span{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #607db8;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+section .contentBx .formBx .inputBx input{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #607d8b;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #607d8b;
+    background: transparent;
+    border-radius: 30px;
+}
+section .contentBx .formBx .inputBx input[type="submit"]{
+    background: #a59449;
+    color:#fff;
+    outline: none;
+    border: none;
+    font-weight: 800;
+    cursor: pointer;
+}
+section .contentBx .formBx .inputBx input[type="submit"]:hover{
+    background:#d3c896;
+    font-weight: 800;
+}
+section.contentBx .formBx .rem{
+    margin-bottom: 10px;
+    color: #000000;
+    font-weight: 800;
+    font-size: 14px;
+}
+section .contentBx .formBx .inputBx p{
+    color: #607d8b;
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+section .contentBx .formBx .inputBx p a{
+    color: #a59449;
+}
+section .contentBx .formBx h3{
+    color: #000000;
+    text-align: center;
+    margin: 80px 0 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+#sm_size{
+    width: 40px;
+    height: 40px;
+}
+section .contentBx .formBx .socal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .contentBx .formBx .socal li{
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #a59449;
+    border-radius: 50%;
+    margin: 0 7px;
+    cursor: pointer;
+}
+section .contentBx .formBx .socal li:hover{
+    background: #d3c896;
+}
+section .contentBx .formBx .socal li img{
+    transform: scale(0.75);
+    filter: inherit(1);
+}
+@media (max-width: 768px)
+{
+    *{
+        font-weight: 900;
+    }
+    section .imgBx {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+    }
+    section .contentBx{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        font-size: 1.25rem;
+    }
+    section .contentBx span{
+        font-size: 1.25rem;
+        font-weight: 800;
+    }
+    section .contentBx .formBx{
+        width: 100%;
+        padding: 40px;
+        background: rgb(255, 255, 255);
+        opacity: .92;
+        margin: 50px;
+        font-size: 1.25rem;
+    }
+    section .contentBx .formBx h3{
+        color: #607d8b;
+        text-align: center;
+        margin: 30px 0 10px;
+        font-weight: 500;
+    }
+}
